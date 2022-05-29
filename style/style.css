@@ -1,0 +1,205 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --defaultGreen: #1db954;
+    --lightGreen: #1ed760;
+    --grey: #919496;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Utility Class */
+.logo{
+    height: 50px;
+    width: auto;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+.navbar-container li{
+    padding: 0 20px;
+    transition: all 300ms ease;
+}
+
+.navbar-container li:nth-child(3){
+    border-left: 1px solid #fff;
+}
+
+.navbar-container li:hover{
+    color: var(--defaultGreen);
+    cursor: pointer;
+}
+
+/* Showcase */
+.showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: url(../img/showcase.webp) center center/cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+}
+
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showcase-container h2{
+    font-size: 5rem;
+}
+
+.showcase-container p{
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+.btn-primary{
+    background: var(--defaultGreen);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: all 500ms ease;
+}
+
+.btn-primary:hover{
+    background: var(--lightGreen);
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.footer-content{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer-menu{
+    margin: 0 60px;
+    list-style: none;
+}
+
+.footer-menu-item{
+    margin: 25px 0;
+    transition: all 500ms ease;
+}
+
+.footer-menu-item:hover{
+    color: var(--defaultGreen);
+    cursor: pointer;
+}
+
+.footer-menu p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--grey);
+    font-size: 0.8rem;
+}
+
+/* Footer Socials */
+.socials{
+    display: flex;
+}
+
+.socials i{
+    margin: 0 20px;
+    font-size: 1.7rem;
+    transition: all 500ms ease;
+}
+
+.socials i:hover{
+    color: var(--defaultGreen);
+    cursor: pointer;
+}
+
+/* Footer Info */
+
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 60%;
+	margin: auto;
+	font-weight: bold;
+	color: var(--grey);
+	font-size: 0.75rem;
+	padding-top: 70px;
+}
+
+.footer-info-items{
+    display: flex;
+    list-style: none;
+}
+
+.footer-info-item{
+    margin: 0 10px;
+    transition: all 500ms ease;
+}
+
+.footer-info-item:hover{
+    color: var(--defaultGreen);
+    cursor: pointer;
+}
+
+.country{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.country p{
+    transition: all 500ms ease;
+}
+
+.country p:hover{
+    color: var(--defaultGreen);
+    cursor: pointer;
+}
+
+.brazil-flag{
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
